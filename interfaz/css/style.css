@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #ccc;
+    margin: 0;
+    padding: 20px;
+    font-size: 28px;
+}
+
+form, .menu-opciones, .rol-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.boton-verde {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-rojo {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-gris {
+    background-color: #bbb;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.boton-gris:hover {
+    background-color: #999;
+}
+
+.menu-opciones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
