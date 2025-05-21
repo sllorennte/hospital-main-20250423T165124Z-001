@@ -5,6 +5,7 @@ document.getElementById('crearEspecialistaForm').addEventListener('submit', asyn
     const nombre = document.getElementById('nombre').value;
     const apellido = document.getElementById('apellido').value;
     const dni = document.getElementById('dni').value;
+    const fechaNacimiento = document.getElementById('fechaNacimiento').value;
     const especialidad = document.getElementById('especialidad').value;
 
     // Crear un objeto con los datos a enviar
@@ -12,7 +13,8 @@ document.getElementById('crearEspecialistaForm').addEventListener('submit', asyn
         nombre: nombre,
         apellido: apellido,
         dni: dni,
-        especialidad: especialidad
+        especialidad: especialidad,
+        fechaNacimiento: fechaNacimiento
     };
 
     try {

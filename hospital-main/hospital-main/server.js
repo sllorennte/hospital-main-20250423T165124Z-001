@@ -3,10 +3,16 @@ const conectar = require('./conexion');
 const Paciente = require('./pacientes'); 
 const Especialista = require('./especialista'); 
 const Cita = require('./cita');
+const cors = require('cors');
 
 const app = express();
 const PORT = 3000;
 
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type']
+}));
 // Middleware para permitir que el servidor reciba datos JSON
 app.use(express.json());
 

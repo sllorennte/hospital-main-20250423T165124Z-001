@@ -4,5 +4,6 @@ const especialista = new mongoose.Schema({
     apellido: String,
     dni: String,
     especialidad: String,
+    fechaNacimiento: String
 });
 module.exports = mongoose.model('especialista', especialista);
