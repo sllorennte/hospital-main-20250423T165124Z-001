@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>Crear Cita</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>CREAR CITA</h1>
-    <form>
-        <input placeholder="ID Paciente"><br><br>
-        <input placeholder="ID Especialista"><br><br>
-        <input placeholder="Fecha (YYYY-MM-DD)"><br><br>
-        <input placeholder="Hora (HH:MM)"><br><br>
-        <input placeholder="Estado (asiste / no asiste)"><br><br>
+    <form id="crearCitaForm">
+        <input type="text" id="idPaciente" placeholder="ID del paciente" required><br><br>
+        <input type="text" id="idEspecialista" placeholder="ID del especialista" required><br><br>
+        <input type="date" id="fecha" placeholder="Fecha" required><br><br>
+        <input type="time" id="hora" placeholder="Hora" required><br><br>
+        <input type="text" id="estado" placeholder="Estado (asiste / no asiste)" required><br><br>
         <button type="submit" class="boton-verde">CREAR CITA</button>
         <a href="menu.html" class="boton-rojo">SALIR</a>
     </form>
+
     <script src="/scripts/crear_cita.js"></script>
-<script src="/scripts/crear_paciente.js"></script>
 </body>
 </html>

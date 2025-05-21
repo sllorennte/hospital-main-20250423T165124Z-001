@@ -40,9 +40,9 @@ app.post('/api/especialistas/crear', async (req, res) => {
     try {
         const nuevoEspecialista = new Especialista(req.body);
         await nuevoEspecialista.save();
-        res.status(201).send('Especialista creado con éxito');
+        res.status(201).json({ mensaje: 'Especialista creado con éxito' }); // ✅ RESPUESTA JSON
     } catch (error) {
-        res.status(400).send('Error al crear especialista: ' + error.message);
+        res.status(400).json({ error: 'Error al crear especialista', detalle: error.message });
     }
 });
 
@@ -51,7 +51,7 @@ app.post('/api/citas/crear', async (req, res) => {
     try {
         const nuevaCita = new Cita(req.body);
         await nuevaCita.save();
-        res.status(201).send('Cita creada con éxito');
+        res.status(201).json({ mensaje: 'Cita creada con éxito' });
     } catch (error) {
         res.status(400).send('Error al crear cita: ' + error.message);
     }
